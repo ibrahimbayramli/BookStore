@@ -92,5 +92,6 @@ public class JwtProvider implements IJwtProvider {
                 .setSigningKey(JWT_SECRET)
                 .parseClaimsJws(token)
                 .getBody();
+        return claims;
     }
 }

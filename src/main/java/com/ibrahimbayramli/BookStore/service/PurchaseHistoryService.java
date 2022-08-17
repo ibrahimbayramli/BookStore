@@ -16,13 +16,13 @@ public class PurchaseHistoryService implements IPurchaseHistoryService {
     private IPurchaseHistoryRepository purchaseHistoryRepository;
 
     @Override
-    public PurchaseHistory savePurchaseHistory(PurchaseHistory purchaseHistory){
+    public PurchaseHistory savePurchaseHistory(PurchaseHistory purchaseHistory) {
         purchaseHistory.setPurchaseTime(LocalDateTime.now());
         return purchaseHistoryRepository.save(purchaseHistory);
     }
 
     @Override
-    public List<IPurchaseItem> findPurchaseItemOfUser(Long userId){
+    public List<IPurchaseItem> findPurchaseItemOfUser(Long userId) {
         return purchaseHistoryRepository.findAllPurchaseOfUser(userId);
     }
 

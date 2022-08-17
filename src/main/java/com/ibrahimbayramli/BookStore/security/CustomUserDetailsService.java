@@ -20,10 +20,10 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        User user=userService.findByUserName(username)
-                .orElseThrow(()-> new UsernameNotFoundException(username));
+        User user = userService.findByUserName(username)
+                .orElseThrow(() -> new UsernameNotFoundException(username));
 
-        Set<GrantedAuthority> authorities=Set.of(SecurityUtils.convertToAuthority(user.getRole().name()));
+        Set<GrantedAuthority> authorities = Set.of(SecurityUtils.convertToAuthority(user.getRole().name()));
 
         return UserPrincipal.builder()
                 .user(user).id(user.getId())

@@ -1,11 +1,12 @@
 repo_name: ibrahimbayramli/BookStore
 report_id: c32636b283fc66af4c8d9e0767ba58aa
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T22:48:25+00:00'
+timestamp: '2024-02-29T18:20:08+00:00'
 requested_by: ibrahimbayramli
 provider: github
 branch: main
-detected_tools_count: 6
+detected_tools_count: 15
 tools:
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore
   detection_source: Repo Metadata
 - name: Spring Framework
   description: An application framework and inversion of control container for the
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/2006/spring-framework-project-logo.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
   detection_source: pom.xml
   last_updated_by: ibrahimbayramli
   last_updated_on: 2022-08-09 11:06:26.000000000 Z
@@ -38,6 +41,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/3105/h2-logo_square_400x400.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
   detection_source: pom.xml
   last_updated_by: ibrahimbayramli
   last_updated_on: 2022-08-09 11:06:26.000000000 Z
@@ -49,6 +53,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
   detection_source: pom.xml
   last_updated_by: ibrahimbayramli
   last_updated_on: 2022-08-09 11:06:26.000000000 Z
@@ -60,6 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore
   detection_source: Repo Metadata
 - name: Apache Camel
   description: A versatile open source integration framework
@@ -70,6 +76,118 @@ tools:
   category: Application Hosting
   sub_category: Platform as a Service
   image_url: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/src/main/resources/application.properties
   detection_source: src/main/resources/application.properties
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: com.h2database:h2
+  description: H2 Database Engine
+  license: MIT-feh
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: io.jsonwebtoken:jjwt
+  description: 'Java JWT: JSON Web Token for Java and Android'
+  version: 0.9.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-17 19:22:05.000000000 Z
+- name: org.postgresql:postgresql
+  description: The PostgreSQL Driver JDBC4
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-data-jpa
+  description: Starter for using Spring Data JPA with Hibernate
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-security
+  description: Starter for using Spring Security
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-test
+  description: Starter for testing Spring Boot applications with libraries including
+    JUnit
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.springframework.boot:spring-boot-starter-web
+  description: Starter for building web, including RESTful, applications using Spring
+    MVC
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
+  last_updated_by: ibrahimbayramli
+  last_updated_on: 2022-08-09 11:06:26.000000000 Z
+- name: org.springframework.security:spring-security-test
+  description: Spring-security-test
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/ibrahimbayramli/BookStore/blob/main/pom.xml
+  detection_source: pom.xml
   last_updated_by: ibrahimbayramli
   last_updated_on: 2022-08-09 11:06:26.000000000 Z
